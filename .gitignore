@@ -34,10 +34,14 @@
 *.vrb
 *.xdy
 *.tdo
-
+!graphics/*
+!presi.pdf
+!metropolistheme.pdf
 
 # Output
 
 *.sty
-doc/metropolistheme.pdf
-demo/demo.pdf
+*.pdf
+*.bcf
+*.xdv
+*.run.xml

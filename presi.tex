@@ -1,0 +1,135 @@
+%!TeX program = xelatex
+\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+%\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+
+\usepackage[backend=biber, style=authoryear,sorting=none,backref,backrefstyle=none]{biblatex} % use biblatex
+\addbibresource{presi.bib}
+%\usepackage{dejavu} % load my favourite KISS font
+\usepackage{ETbb} % my favourite fancy font
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+%\usefonttheme{default} %TODO: what do these actually do?
+\usefonttheme{professionalfonts}
+%\usefonttheme{serif}
+\usepackage{mathpazo,euler}
+\usepackage{fontspec}
+%math stuff
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+% graphics
+\usepackage{graphicx}
+
+\title{A title}
+%\subtitle{A subtitle}
+\date{\today}
+\author{Igor Krawczuk}
+%\institute{Center for modern beamer themes}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+
+
+% for fragile explanation, see https://tex.stackexchange.com/questions/317633/macro-allowframebreaks-as-default-returns-error-when-loaded-with-fragile/317712#317712
+\begin{frame}[fragile]{Introducing myself}
+\end{frame}
+%{%
+%\setbeamertemplate{frame footer}{My custom footer}
+%\begin{frame}[fragile]{Frame footer}
+%    \themename defines a custom beamer template to add a text to the footer. It can be set via
+%    \begin{verbatim}\setbeamertemplate{frame footer}{My custom footer}\end{verbatim}
+%\end{frame}
+%}
+
+\begin{frame}{Structure of this talk}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Introduction}
+\begin{frame}[fragile]{Motivation}
+  \cite{Knuth92}
+  \cite{greenwade93}
+\end{frame}
+\begin{frame}[fragile]{Why do we care?}
+\end{frame}
+\begin{frame}[fragile]{What exists already?}
+\end{frame}
+
+\section{Our thing}
+
+\begin{frame}{Background to our thing}
+\end{frame}
+
+
+\begin{frame}{Our actual thing}
+\end{frame}
+
+\begin{frame}{Evaluation of our thing}
+\end{frame}
+\begin{frame}{Discussion of our thing}
+\end{frame}
+\section{Conclusion}
+\begin{frame}{Recapping our thing}
+\end{frame}
+\begin{frame}{Questions answered by our thing}
+\end{frame}
+\begin{frame}{Questions opened/left open by our thing}
+\end{frame}
+
+\begin{frame}{Summary}
+
+  Get the source of this theme and the demo presentation from
+
+  \begin{center}\url{github.com/matze/mtheme}\end{center}
+
+  The theme \emph{itself} is licensed under a
+  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
+  Attribution-ShareAlike 4.0 International License}.
+
+  \begin{center}\ccbysa\end{center}
+
+\end{frame}
+
+\begin{frame}[standout]
+  Questions?
+\end{frame}
+
+\appendix
+
+
+\begin{frame}[fragile]{Backup slides}
+  \nocite{*}
+%  Sometimes, it is useful to add slides at the end of your presentation to
+%  refer to during audience questions.
+%
+%  The best way to do this is to include the \verb|appendixnumberbeamer|
+%  package in your preamble and call \verb|\appendix| before your backup slides.
+%
+%  \themename will automatically turn off slide numbering and progress bars for
+%  slides in the appendix.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography
+
+\end{frame}
+
+\end{document}
